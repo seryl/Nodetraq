@@ -1,3 +1,13 @@
+# Overview
+
+Nodetraq is a server management utility that was put together at RockYou!
+
+This version is stripped of all of the internal specific libraries at RY, however it's still going to take a bit of work to make it completely usable outside.
+
+But there's a strong set of utilities here and without too much work this could become something a little more generic.
+
+Anyone who's interested in this, ping me and maybe we could take it a step further.
+
 # Installation and Setup
 
 ## Install ssl libraries
