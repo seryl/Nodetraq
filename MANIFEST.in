@@ -1,0 +1,3 @@
+include nodetraq/config/deployment.ini_tmpl
+recursive-include nodetraq/public *
+recursive-include nodetraq/templates *

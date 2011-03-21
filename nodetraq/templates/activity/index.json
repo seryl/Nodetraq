@@ -1,0 +1,36 @@
+{
+    "activities": [
+    % for activity in c.activities:
+        {
+            "user": "${activity.user.name}",
+            "created_at": "${activity.created_at}",
+            "link": "${activity.link}",
+            "activity_type": "${activity.activity_type.name}",
+            "children": [
+            % for child in activity.children:
+                {
+                    "changesets": [
+                    % for changeset in child.changesets:
+                        {
+                            "field": "${changeset.field}",
+                            "old_value": "${changeset.old_value}",
+                            "new_value": "${changeset.new_value}",
+                        },
+                    % endfor
+                    ],
+                },
+            % endfor
+            ],
+            "changesets": [
+            % for changeset in activity.changesets:
+                {
+                    "field": "${changeset.field}",
+                    "old_value": "${changeset.old_value}",
+                    "new_value": "${changeset.new_value}",
+                },
+            % endfor
+            ],
+        },
+    % endfor
+    ]
+}

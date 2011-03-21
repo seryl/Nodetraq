@@ -1,0 +1,16 @@
+select {
+    color: #666;
+}
+
+#disabled_user_warning {
+    padding: 2px 40px;
+    margin: 12px 2px;
+    background: url("/images/error.png") no-repeat scroll 0 0 transparent;
+    color: #666;
+    font-size: 80%;
+}
+
+#group_form {
+    margin: 0 auto;
+    padding: 0 140px;
+}

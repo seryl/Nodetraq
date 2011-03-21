@@ -1,0 +1,195 @@
+/* Globals */
+body {
+    -moz-background-clip: border;
+    -moz-background-inline-policy: continuous;
+    -moz-background-origin: padding;
+    background: #F1EFE2 none repeat scroll 0 0;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+
+    color: #484848;
+    min-width: 900px;
+}
+
+a, a:link, a:visited {
+    color: #116699;
+    text-decoration: none;
+}
+
+    a:hover, a:active {
+        color: #C61A1A;
+        text-decoration: underline;
+    }
+    a img { border: 0 none; }
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 { font-family: "Trebuchet MS",Verdana,sans-serif; }
+
+h2, .wiki h1 {
+    letter-spacing: -1px;
+    font-size: 20px;
+    margin: 0 0 10px;
+    padding: 2px 10px 1px 0;
+}
+
+h2, h3, h4, .wiki h1, .wiki h2, .wiki h3 {
+    border-bottom: 0 none;
+    color: #606060;
+    font-family: "Trebuchet MS", Georgia, "Times New Roman",serif;
+}
+
+.box {
+    background-color: #F6F6F6;
+    border: 1px solid #E4E4E4;
+    color: #505050;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+    padding: 6px;
+}
+
+.center { text-align: center; }
+
+#wrapper {
+    -moz-background-clip: border;
+    -moz-background-inline-policy: continuous;
+    -moz-background-origin: padding;
+    background: white url(../images/content-right.png) repeat-y scroll 100% 0;
+    padding-right: 10px;
+}
+
+#wrapper2 {
+    -moz-background-clip: border;
+    -moz-background-inline-policy: continuous;
+    -moz-background-origin: padding;
+    background: white url(../images/content-left.png) repeat-y scroll 0 0;
+    padding-left: 10px;
+}
+
+.break { clear: both; }
+
+/* Header */
+#top-menu {
+    -moz-background-clip: border;
+    -moz-background-inline-policy: continuous;
+    -moz-background-origin: padding;
+    background: #2C4056 none repeat scroll 0 0;
+    color #FFFFFF;
+    font-size: 80%;
+    height: 1.8em;
+    padding: 2px 2px 0 6px;
+}
+    #top-menu ul{
+        padding: 0;
+        margin: 0;
+    }
+
+    #top-menu li {
+        display: inline;
+        white-space: nowrap;
+    }
+
+    #top-menu a {
+        padding-right: 8px;
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+
+#header {
+    position: relative;
+    background-color: #507AAA;
+    color: #F8F8F8;
+    height: 3.8em;
+    padding: 4px 8px 0 6px;
+}
+    #header h1 {
+        margin-left: 0;
+        margin-top: 0.3em;
+    }
+
+#main {
+    font-size: 100%;
+    font-size-adjust: none;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+#login {
+    -moz-background-clip: border;
+    -moz-background-inline-policy: continuous;
+    -moz-background-origin: padding;
+    overflow: visible !important;
+    width: 265px;
+    margin: 0 auto;
+    padding: 86px 10px 100px;
+}
+
+/* Forms */
+form { display: inline; }
+
+input, select {
+    margin-bottom: 1px;
+    margin-top: 1px;
+    vertical-align: middle;
+}
+
+#footer {
+    -moz-background-clip: border;
+    -moz-background-inline-policy: continuous;
+    -moz-background-origin: padding;
+    background: #F1EFE2 url(../images/footer-bg.png) repeat-x scroll 0 0;
+    border: 0 none;
+    color #999999;
+    height: 40px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -4px;
+    text-align: right;
+}
+
+#footer .bgl {
+    -moz-background-clip: border;
+    -moz-background-inline-policy: continuous;
+    -moz-background-origin: padding;
+    background: transparent url(../images/footer-left.png) no-repeat scroll 0 0;
+    height: 40px;
+}
+
+#footer .bgr {
+    -moz-background-clip: border;
+    -moz-background-inline-policy: continuous;
+    -moz-background-origin: padding;
+    background: transparent url(../images/footer-right.png) no-repeat scroll 100% 0;
+    height: 40px;
+    padding-right: 30px;
+    padding-top: 22px;
+}
+
+/* Flash Message */
+#flash {
+    border: 1px solid #E4E4E4;
+    background: #F6F7F8;
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.flash_error {
+    background: #FFBABA !important;
+}
+
+.hidden { display: none; }
+.selected_secondary { text-align: right; vertical-align: top; }
+

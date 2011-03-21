@@ -1,0 +1,7 @@
+{
+    "nodes": [
+% for node in c.nodes:
+        {"node": "${node[0]}"},
+% endfor
+    ]
+}

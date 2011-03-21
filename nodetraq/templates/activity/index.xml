@@ -1,0 +1,37 @@
+<activities>
+    % for activity in c.activities:
+    <activity>
+        <user>${activity.user.name}</user>
+        <created_at>${activity.created_at}</created_at>
+        <link>${activity.link}</link>
+        <activity_type>${activity.activity_type.name}</activity_type>
+
+        <children>
+        % for child in activity.children:
+            <child>
+                <changesets>
+                % for changeset in child.changesets:
+                    <changeset>
+                        <field>${changeset.field}</field>
+                        <old_value>${changeset.old_value}</old_value>
+                        <new_value>${changeset.new_value}</new_value>
+                    </changeset>
+                % endfor
+                </changesets>
+            </child>
+        % endfor
+        </children>
+
+        <changesets>
+        % for changeset in activity.changesets:
+            <changeset>
+                <field>${changeset.field}</field>
+                <old_value>${changeset.old_value}</old_value>
+                <new_value>${changeset.new_value}</new_value>
+            </changeset>
+        % endfor
+        </changesets>
+
+    </activity>
+    % endfor
+</activities>

@@ -1,0 +1,24 @@
+#dns_list { margin: 0 auto; padding: 0 140px; }
+
+#dns_type { width: 100px; }
+#dns_host { width: 300px; }
+#dns_results { width: 100%; }
+
+td.record_type, td.record_host,
+td.result_set, .result,
+td.record_edit, td.record_remove {
+    text-align: center;
+    white-space: normal;
+    overflow: auto;
+    width: 500px;
+    word-wrap: breakword;
+}
+
+.record_modify, .record_publish, .record_revert {
+    width: 700px;
+    margin: 0 240px;
+}
+
+.record_modify table {
+    width: 100%;
+}
